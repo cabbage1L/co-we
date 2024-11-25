@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text to Speech by ElevenLabs</title>
+</head>
+
+<body>
+    <h1>Text to Speech Example</h1>
+    <textarea id="text-input" placeholder="พิมพ์ข้อความที่นี่..."></textarea>
+    <button onclick="convertTextToSpeech()">Convert to Speech</button>
+    <audio id="audio" controls></audio>
+
+    <h1>Upload a File</h1>
+    <form action="/upload" method="post" enctype="multipart/form-data">
+        <input type="file" name="file" />
+        <button type="submit">Upload File</button>
+    </form>
+
+    <a href="/login">Go to login</a>
+  
+    <a href="/register">Go to register</a>
+    
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</body>
+
+</html>
